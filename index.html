@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary-Calculator</title>
+    <script src="./jQuery.js"></script>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <h1>Salary Calculator</h1>
+    </header>
+
+    <!-- Add Empolyee section -->
+    <Section class="employee_entry">
+
+        <div class="container">
+            <!-- data input -->
+            <div class="row">
+                <h2>Add Employee</h2>
+                <input type="text" id="employee-first-name" placeholder="First Name">
+                <input type="text" id="employee-last-name" placeholder="Last Name">
+                <input type="text" id="employee-id" placeholder="ID">
+                <input type="text" id="employee-title" placeholder="Title">
+                <input type="text" id="employeesalary" placeholder="Annual Salary">
+            </div>
+            <!-- submit button -->
+            <div class="row">
+                <button id="submit-btn">Submit</button>
+            </div> 
+        </div>
+    </Section>
+
+    <!--Employee data section  -->
+    <section class="employee-data">
+        <div class="container">
+            <h2>Employees</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Annual Salary</th>
+                        <th> </th>
+                    </tr>
+                </thead>
+                <tbody id="table-results"></tbody>
+                <tr>
+                    <td>William</td>
+                    <td>King</td>
+                    <td>76890</td>
+                    <td>Manager</td>
+                    <td>$80,000</td>
+                    <td>
+                        <button class="delete-btn">Delete</button>
+                    </td>
+                </tr>
+                <tfoot>
+                    <td colspan="6"></td>
+                </tfoot>
+            </table>
+        </div>
+        <div class="total-monthly-row">
+            <p>Total Monthly: <span id="monthly-total" >$15,000.00</span> </p>
+        </div>
+    </section>
+    
+</body>
+</html>
