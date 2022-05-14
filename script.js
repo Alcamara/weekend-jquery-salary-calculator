@@ -70,9 +70,24 @@ function addEmployee() {
 // create a function that takes in one parameter 
 function displayEmployeeData(employeesArray){
     
+    let tableBody = $('#table-results')
+
+    tableBody.empty()
+
     //use a for of loop to iterate through employees array
     for (let employee of employeesArray) {
         
-        console.log(employee.firstName);
+        tableBody.append(`
+    <tr>
+        <td>${employee.firstName}</td>
+        <td>${employee.lastName}</td>
+        <td>${employee.idNumber}</td>
+        <td>${employee.title}</td>
+        <td>${employee.salary}</td>
+        <td>
+            <button class="delete-btn">Delete</button>
+        </td>
+    </tr>
+        `)
     }
 }
