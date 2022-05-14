@@ -14,8 +14,10 @@ return as an object, and push it to employees array
 */
 $('#submit-btn').on('click',addEmployee)
 
+$('#table-results').on('click','.delete-btn',deleteRow);
 
-$
+
+
 }
 
 
@@ -110,9 +112,20 @@ function displayEmployeeData(employeesArray){
 }
 
 //create function that take in one parameter
-
 function monthlyCost(allSalaries){
 
     //divide allSalaries and return result
     return allSalaries/12
+}
+
+
+function deleteRow(){
+
+    $(this).parent().parent().remove();
+
+    let name = $(this).parent().prev().prev().prev().prev().prev().text()
+
+    console.log(name);
+
+    alert(`${name} was removed from list`)
 }
