@@ -69,25 +69,50 @@ function addEmployee() {
 
 // create a function that takes in one parameter 
 function displayEmployeeData(employeesArray){
-    
-    let tableBody = $('#table-results')
+    //create a jQuery object of id table-body and store it in a variable called tableBodyElement
+    let tableBodyElement = $('#table-results')
+    let allSalaries = 0;
 
-    tableBody.empty()
+    tableBodyElement.empty()
 
     //use a for of loop to iterate through employees array
     for (let employee of employeesArray) {
         
-        tableBody.append(`
-    <tr>
-        <td>${employee.firstName}</td>
-        <td>${employee.lastName}</td>
-        <td>${employee.idNumber}</td>
-        <td>${employee.title}</td>
-        <td>${employee.salary}</td>
-        <td>
-            <button class="delete-btn">Delete</button>
-        </td>
-    </tr>
+
+        tableBodyElement.append(`
+        <tr>
+            <td>${employee.firstName}</td>
+            <td>${employee.lastName}</td>
+            <td>${employee.idNumber}</td>
+            <td>${employee.title}</td>
+            <td>$${employee.salary.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, "$&,")}</td>
+            <td>
+                <button class="delete-btn">Delete</button>
+            </td>
+        </tr>
         `)
+
+        allSalaries += employee.salary;
     }
+
+    let monthlyTotal = monthlyCost(allSalaries)
+
+   if (monthlyTotal > 20000) {
+       
+    $('#monthly-total').css('background-color','red')
+    $('#monthly-total').text('$' + monthlyTotal.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, "$&,"))
+
+   }else{
+
+    $('#monthly-total').text('$' + monthlyTotal.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, "$&,"))
+
+   }
+}
+
+//create function that take in one parameter
+
+function monthlyCost(allSalaries){
+
+    //divide allSalaries and return result
+    return allSalaries/12
 }
