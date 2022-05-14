@@ -12,7 +12,9 @@
 <body>
     <!-- header -->
     <header>
-        <h1>Salary Calculator</h1>
+        <div class="container">
+            <h1 class="title">Salary Calculator</h1>
+        </div>
     </header>
 
     <!-- Add Empolyee section -->
@@ -22,11 +24,15 @@
             <!-- data input -->
             <div class="row">
                 <h2>Add Employee</h2>
-                <input type="text" id="employee-first-name" placeholder="First Name">
-                <input type="text" id="employee-last-name" placeholder="Last Name">
-                <input type="text" id="employee-id" placeholder="ID">
-                <input type="text" id="employee-title" placeholder="Title">
-                <input type="text" id="employee-salary" placeholder="Annual Salary">
+            </div>
+            <div class="row">
+                <div class="employee-data">
+                    <input type="text" id="employee-first-name" placeholder="First Name">
+                    <input type="text" id="employee-last-name" placeholder="Last Name">
+                    <input type="text" id="employee-id" placeholder="ID">
+                    <input type="text" id="employee-title" placeholder="Title">
+                    <input type="text" id="employee-salary" placeholder="Annual Salary">
+                </div>
             </div>
             <!-- submit button -->
             <div class="row">
@@ -65,10 +71,12 @@
                     <td colspan="6"></td>
                 </tfoot>
             </table>
+
+            <div class="total-monthly-row">
+                <p>Total Monthly: <span id="monthly-total" >$15,000.00</span> </p>
+            </div>
         </div>
-        <div class="total-monthly-row">
-            <p>Total Monthly: <span id="monthly-total" >$15,000.00</span> </p>
-        </div>
+        
     </section>
     
 </body>
