@@ -12,7 +12,10 @@ function readyNow(){
 Create a click event that collect data, 
 return as an object, and push it to employees array
 */
-    $('#submit-btn').on('click',addEmployee)
+$('#submit-btn').on('click',addEmployee)
+
+
+$
 }
 
 
@@ -45,18 +48,31 @@ function addEmployee() {
     let title =  $('#employee-title').val();
     let salary =  Number($('#employee-salary').val());
      
+    // create employee variable to store new objects
     let employee = employeeFactory(firstName, lastName, idNumber, title, salary);
 
-    // employees.push( employee)
+    //push employee object to employee array
+    employees.push(employee)
 
-    console.log(employees);
+    //console.log(employees);
 
+    //create employee variable to store new objects
     $('#employee-first-name').val('')
     $('#employee-last-name').val('')
     $('#employee-id').val('')
     $('#employee-title').val('')
-    $('#employee-salary').val('')
+    $('#employee-salary').val('') 
 
+    displayEmployeeData(employees)
+
+}
+
+// create a function that takes in one parameter 
+function displayEmployeeData(employeesArray){
     
-
+    //use a for of loop to iterate through employees array
+    for (let employee of employeesArray) {
+        
+        console.log(employee.firstName);
+    }
 }
