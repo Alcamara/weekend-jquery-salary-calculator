@@ -20,7 +20,7 @@ The Salary Calculator does the following:
 
 ## Screen Shot
 
-![alt text](./image/mobile.png)
+![alt text](./image/mobile.png){ width:200px}
 ![alt text](./image/tablet.png)
 ![alt text](./image/desketop.png)
 
@@ -58,7 +58,10 @@ How does someone use this application? Tell a user story here.
 
 ## Built With
 
-List technologies and frameworks here
+- HTML
+- CSS
+- JavaScript
+- JQuery
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
