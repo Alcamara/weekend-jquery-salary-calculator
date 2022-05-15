@@ -49,24 +49,53 @@ function addEmployee() {
     let idNumber = $('#employee-id').val();
     let title =  $('#employee-title').val();
     let salary =  Number($('#employee-salary').val());
+
+    let allInputsFilled =  checkIfAllInputsFilled(firstName, lastName, idNumber, title, salary)
      
-    // create employee variable to store new objects
-    let employee = employeeFactory(firstName, lastName, idNumber, title, salary);
+    /* 
+        if allInputsFilled is true execute below 
+        else clear all fields and display alert to user
+    */
+    if (allInputsFilled) {
+        // create employee variable to store new objects
+        let employee = employeeFactory(firstName, lastName, idNumber, title, salary);
 
-    //push employee object to employee array
-    employees.push(employee)
+        //push employee object to employee array
+        employees.push(employee)
 
-    //console.log(employees);
+        //create employee variable to store new objects
+        $('#employee-first-name').val('')
+        $('#employee-last-name').val('')
+        $('#employee-id').val('')
+        $('#employee-title').val('')
+        $('#employee-salary').val('') 
 
-    //create employee variable to store new objects
-    $('#employee-first-name').val('')
-    $('#employee-last-name').val('')
-    $('#employee-id').val('')
-    $('#employee-title').val('')
-    $('#employee-salary').val('') 
+        displayEmployeeData(employees)
 
-    displayEmployeeData(employees)
+    } else{
 
+        $('#employee-first-name').val('')
+        $('#employee-last-name').val('')
+        $('#employee-id').val('')
+        $('#employee-title').val('')
+        $('#employee-salary').val('') 
+
+        alert('Please fill out all fields')
+    }
+
+    
+
+}
+
+
+//created function to see of all input fields are filled
+function checkIfAllInputsFilled(firstName, lastName, idNumber, title, salary){
+
+    if(firstName != '' && lastName != '' && idNumber != '' && title != '' && salary > 0){
+        return true;
+    }
+
+    return false
 }
 
 // create a function that takes in one parameter 
