@@ -20,9 +20,13 @@ The Salary Calculator does the following:
 
 ## Screen Shot
 
-<image src='./image/mobile.png' alt='mobile' width='200' style='display: inline'> <image src='./image/tablet.png' alt='mobile' width='200'>
+<image src='./image/mobile.png' alt='mobile' width='200' style='display: inline'> <image src='./image/tablet.png' alt='mobile' width='200'> <image src='./image/desketop.png' alt='mobile' width='200'>
 
-<image src='./image/desketop.png' alt='mobile' width='200'>
+
+<image src='./image/input.png' alt='example of inputting data' width='200' style='display: inline'> <image src='./image/display.png' alt='mobile' width='200' style='display: inline'>
+
+<image src='./image/exceed.png' alt='what happens when budget is exceed' width='200' style='display: inline'> <image src='./image/delete.png' alt='what happens when you delete entry' width='200' style='display: inline'>
+
 
 
 ## Installation
