@@ -45,9 +45,15 @@ header{
 employee-data section 
 =======================*/
 
-.employee-data{
+.employee_entry{
+    margin: 30px 0;
+
+}
+
+.employee-data, .employee_entry-fields{
     margin: 0 auto;
     border: 1px solid red;
+    
 }
 
 
