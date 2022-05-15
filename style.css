@@ -16,7 +16,7 @@
 .container{
     width: 80%;
     margin: 0 auto;
-    border: 1px solid red;
+    
 }
 
 .row{
@@ -52,13 +52,22 @@ employee-data section
 
 .employee-data, .employee_entry-fields{
     margin: 0 auto;
-    border: 1px solid red;
-    
+}
+
+.btn{
+    margin-top: 10px;
+    align-content: end;
+
+}
+
+.total-monthly-row{
+    margin-top: 20px;
+    text-align: right;
 }
 
 
 input{
-    width: 122px;
+    width: 100px;
 }
 
 input + input{
@@ -72,6 +81,10 @@ Table section
 table,thead,tr,td,th{
     border: 1px solid blue;
     text-align: center;
+}
+
+table{
+    width: 100%;
 }
 
 tfoot{
