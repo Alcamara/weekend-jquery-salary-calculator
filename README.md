@@ -20,18 +20,10 @@ The Salary Calculator does the following:
 
 ## Screen Shot
 
-<image src='./image/mobile.png' alt='mobile' width='200'>
+<image src='./image/mobile.png' alt='mobile' width='200' style='display: inline'>
 <image src='./image/tablet.png' alt='mobile' width='200'>
 <image src='./image/desketop.png' alt='mobile' width='200'>
 
-
-
-### Prerequisites
-
-Link to software that is required to install the app (e.g. node).
-
-- [Node.js](https://nodejs.org/en/)
-- List other prerequisites here
 
 ## Installation
 
