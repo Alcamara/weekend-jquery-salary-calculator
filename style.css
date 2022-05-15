@@ -15,6 +15,7 @@
 
 .container{
     width: 80%;
+    max-width: 833px ;
     margin: 0 auto;
     
 }
@@ -34,7 +35,7 @@ header{
     font-size: 1rem;
     background-color: var(--Primary-Color);
     color: var(--Secondary-Color);
-    padding: 2em;
+    padding: 2.5em 0;
 }
 
 .title{
@@ -52,11 +53,14 @@ employee-data section
 
 .employee-data, .employee_entry-fields{
     margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .btn{
     margin-top: 10px;
-    align-content: end;
+    justify-content: end;
+    
 
 }
 
@@ -67,12 +71,14 @@ employee-data section
 
 
 input{
-    width: 100px;
+    width: 150px;
 }
 
-input + input{
-    margin-right: 10px;
+.employee_entry-title{
+    margin-bottom: 10px
 }
+
+
 
 /* =============================
 Table section
