@@ -137,6 +137,8 @@ function displayEmployeeData(employeesArray){
 
     $('#monthly-total').text('$' + monthlyTotal.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, "$&,"))
 
+    alert('You have exceed Monthly budget!')
+
    }else{
 
     $('#monthly-total').css({
@@ -144,7 +146,9 @@ function displayEmployeeData(employeesArray){
         'font-weight': 'normal'
     })
 
-    $('#monthly-total').text('$' + monthlyTotal.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, "$&,"))
+    $('#monthly-total').text('$' + monthlyTotal.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, "$&,"));
+
+    
 
    }
 }
