@@ -130,10 +130,19 @@ function displayEmployeeData(employeesArray){
 
    if (monthlyTotal > 20000) {
        
-    $('#monthly-total').css('background-color','red')
+    $('#monthly-total').css({
+        'background-color' : 'red',
+        'font-weight': 'bolder'
+    })
+
     $('#monthly-total').text('$' + monthlyTotal.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, "$&,"))
 
    }else{
+
+    $('#monthly-total').css({
+        'background-color' : 'white',
+        'font-weight': 'normal'
+    })
 
     $('#monthly-total').text('$' + monthlyTotal.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, "$&,"))
 
@@ -155,6 +164,16 @@ function deleteRow(){
     let name = $(this).parent().prev().prev().prev().prev().prev().text()
 
     console.log(name);
+
+     for (const employee of employees) {
+         if( employee.firstName === name){
+
+             employees.splice(employee,1)
+
+             displayEmployeeData(employees)
+             
+         }
+    }
 
     alert(`${name} was removed from list`)
 }
