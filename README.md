@@ -20,8 +20,8 @@ The Salary Calculator does the following:
 
 ## Screen Shot
 
-<image src='./image/mobile.png' alt='mobile' width='200' style='display: inline'>
-<image src='./image/tablet.png' alt='mobile' width='200'>
+<image src='./image/mobile.png' alt='mobile' width='200' style='display: inline'> <image src='./image/tablet.png' alt='mobile' width='200'>
+
 <image src='./image/desketop.png' alt='mobile' width='200'>
 
 
