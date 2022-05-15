@@ -21,8 +21,9 @@ The Salary Calculator does the following:
 ## Screen Shot
 
 <image src='./image/mobile.png' alt='mobile' width='200'>
-![alt text](./image/tablet.png)
-![alt text](./image/desketop.png)
+<image src='./image/tablet.png' alt='mobile' width='200'>
+<image src='./image/desketop.png' alt='mobile' width='200'>
+
 
 
 ### Prerequisites
