@@ -22,10 +22,10 @@ The Salary Calculator does the following:
 
 <image src='./image/mobile.png' alt='mobile' width='200' > <image src='./image/tablet.png' alt='mobile' width='200'> <image src='./image/desketop.png' alt='mobile' width='200'>
 
-
+Example of inputting data and displaying it:
 <image src='./image/input.png' alt='example of inputting data' width='200'> <image src='./image/Display.png' alt='mobile' width='200'>
 
-
+Example of exceeding budget and deletion of entry
 <image src='./image/exceed.png' alt='what happens when budget is exceed' width='200'> <image src='./image/remove.png' alt='what happens when you delete entry' width='200'>
 
 
